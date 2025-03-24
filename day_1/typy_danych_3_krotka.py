@@ -9,3 +9,9 @@ tupla = ("Radek")
 print(type(tupla))
 tupla = "Radek",
 print(type(tupla))
+
+del tupla_liczby # usuniecie!!
+# print(tupla_liczby)
+
+print(tupla_imiona.index("Radek"))
+print(tupla_imiona.count("Radek"))
