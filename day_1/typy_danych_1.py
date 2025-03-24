@@ -52,3 +52,41 @@ print(bool(100))
 print(bool(-100))
 print(bool(''))
 print(bool(None))
+
+# Expression    Evaluates to
+# True and True    True
+# True and False    False
+# False and True    False
+# False and False    False
+# The or Operator’s Truth Table:
+#
+
+print(True or True)
+print(True or False)
+
+# Expression    Evaluates to
+# True or True    True
+# True or False    True
+# False or True    True
+# False or False    False
+# The not Operator’s Truth Table:
+#
+# Expression    Evaluates to
+# not True    False
+# not False
+
+print(not True)
+
+a = 8
+b = 6
+print(f"Porównanie {a} > {b} = {a > b}")
+print(f"Porównanie {a} < {b} = {a < b}")
+print(f"Porównanie {a} <= {b} = {a <= b}")
+print(f"Porównanie {a} >= {b} = {a >= b}")
+print(f"Porównanie {a} == {b} = {a == b} ")
+print(f"Porównanie {a} != {b} = {a != b} ")
+
+
+
+
+
