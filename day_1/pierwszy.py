@@ -18,3 +18,4 @@ print(25 * '168')
 print(25 * 167)
 print(sys.int_info)
 
+print('test')
