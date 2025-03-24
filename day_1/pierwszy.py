@@ -19,3 +19,7 @@ print(25 * 167)
 print(sys.int_info)
 
 print('test')
+
+age = 50
+print(age)
+print(type(age))
