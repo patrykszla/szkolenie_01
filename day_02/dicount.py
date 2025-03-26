@@ -26,5 +26,29 @@ formated_usa_time = datetime.now().strftime("%I:%M %p")
 print("Czas USA:", formated_usa_time)
 print("Czas USA:", formated_usa_time.removeprefix("0"))
 
-date_datetime = datetime.now().strptime("25/03/2025", "%d/%m/%Y" )
+date_datetime = datetime.now().strptime("25/03/2025", "%d/%m/%Y")
 print(date_datetime)
+
+products = [
+    {"sku": 1, "exp_date": today, "price": 100},
+    {"sku": 2, "exp_date": today, "price": 200},
+    {"sku": 3, "exp_date": tomorrow, "price": 500},
+    {"sku": 4, "exp_date": today, "price": 50.00},
+    {"sku": 5, "exp_date": today, "price": 99},
+]
+
+# print(products)
+print("-------- PRODUKTY ---------")
+new_products = []
+for product in products:
+    print(product)
+    print(product['exp_date'])
+    if product['exp_date'] != today:
+        print('DZISIEJSZA!!')
+        continue  # wraca na początek pętli a pass przechodzi dalej!!
+    print("zmiana ceny")
+    product['price'] *= 0.8
+    print(f"""Price for sku {product['sku']}
+is now {product['price']}""")
+
+# print(products)
