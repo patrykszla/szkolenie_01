@@ -28,4 +28,5 @@ print(type(response_img))
 # Zapis bajtowo!!!!
 with open('icona.jpg', 'wb') as f:
     f.write(response_img.content)
+print("Zdjęcie zostało zapisane")
 
